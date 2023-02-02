@@ -10,7 +10,21 @@
 
 <!-- MAIN -->
 <main>
-    
+    <div class="heading">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="" alt="">
+                </div>
+                <div class="slide">
+                    <img src="" alt="">
+                </div>
+                <div class="slide">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!-- FOOTER -->
