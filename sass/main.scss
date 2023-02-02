@@ -1,0 +1,41 @@
+// UTILS
+    //Variables
+    @import "./Utils/Variables";
+
+    //Mixins
+    @import "./Utils/Mixins";
+
+    //Functions
+    @import "./Utils/Functions";
+
+//VENDORS
+
+
+//BASE
+    //UNIVERSAL SELECTOR
+    @import "./Base/UniversalSelector";
+
+    //BODY SELECTOR
+    @import "./Base/BodySelector";
+
+
+//COMPONENTS
+
+
+//LAYOUTS
+    //HEADER
+    @import "./Layouts/Header";
+
+    //MAIN
+    @import "./Layouts/MainTag";
+
+    //FOOTER
+    @import "./Layouts/Footer";
+
+    //SCROLL-BAR
+    @import "./Layouts/ScrollBar";
+
+
+//PAGES
+    
+//THEMES
