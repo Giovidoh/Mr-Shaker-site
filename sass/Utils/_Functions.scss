@@ -1,0 +1,3 @@
+@function opacified-color($color, $amount){
+    @return rgba($color, $amount);
+}
