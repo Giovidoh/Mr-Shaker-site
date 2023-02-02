@@ -29,7 +29,7 @@
                     echo add_nav_menu();
                 ?>
             </ul>
-            <a href="" class="logo">
+            <a href="index.php" class="logo">
                 <img src="images/mr-shaker-logo.png" alt="">
             </a>
             <ul class="navbar__list">
