@@ -1,6 +1,4 @@
-.div{
-    padding: 1em 4em;
-}
+// HERO
 
 .main-hero{
     &__text{
@@ -64,6 +62,20 @@
         }
     }
 }
+
+
+// BODY
+
+.main-body{
+    padding: 7%;
+}
+
+
+
+
+
+
+
 
 // ANIMATIONS
 @keyframes hero-moves {
