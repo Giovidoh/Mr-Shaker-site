@@ -36,7 +36,6 @@ header {
   height: 150px;
   width: 60%;
   position: absolute;
-  top: -10px;
 }
 .navbar__list {
   display: flex;
@@ -66,6 +65,43 @@ header {
   height: 150px;
   background-color: #e27900;
   border-radius: 0px 0px 25px 25px;
+  margin-top: 34px;
+}
+.navbar__change-language {
+  position: absolute;
+  right: 2%;
+  top: 30px;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  font-style: italic;
+}
+.navbar__change-language a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.navbar__change-language a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #e27900;
+  transition: 0.3s;
+}
+.navbar__change-language a:hover {
+  color: #e27900;
+}
+.navbar__change-language a:hover::after {
+  width: 100%;
+}
+.navbar__change-language span {
+  pointer-events: none;
 }
 
 main {

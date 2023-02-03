@@ -18,7 +18,6 @@ header{
     height: 150px;
     width: 60%;
     position: absolute;
-    top: -10px;
         &__list{
             display: flex;
             align-items: center;
@@ -52,6 +51,47 @@ header{
                     height: 150px;
                     background-color: $color-primary;
                     border-radius: 0px 0px 25px 25px;
+                    margin-top: 34px;
+                }
+        }
+
+        &__change-language{
+            position: absolute;
+            right: 2%;
+            top: 30px;
+            color: $pure-white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 10%;
+            font-style: italic;
+                a{
+                    color: $pure-white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            height: 2px;
+                            width: 0;
+                            background-color: $color-primary;
+                            transition: 0.3s;
+                        }
+
+                        &:hover{
+                            color: $color-primary;
+                        }
+
+                        &:hover::after{
+                            width: 100%;
+                        }
+                }
+
+                span{
+                    pointer-events: none;
                 }
         }
 }

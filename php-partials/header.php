@@ -38,4 +38,9 @@
                 ?>
             </ul>
         </nav>
+        <div class="navbar__change-language">
+            <a href="">English</a>
+            <span>/</span>
+            <a href="">Français</a>
+        </div>
     </header>
