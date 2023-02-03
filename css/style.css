@@ -115,6 +115,24 @@ footer {
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  position: fixed;
+  background-color: #e27900;
+  width: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  position: fixed;
+  background-color: #000;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.div {
+  padding: 1em 4em;
+}
+
 .main-hero__text {
   position: absolute;
   left: 50%;

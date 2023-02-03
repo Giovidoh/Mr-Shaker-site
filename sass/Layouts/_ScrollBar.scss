@@ -1,0 +1,13 @@
+::-webkit-scrollbar{
+    position: fixed;
+    background-color: $color-primary;
+    width: 5px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    position: fixed;
+    background-color: $pure-black;
+    margin: 10px;
+    border-radius: 20px;
+}
