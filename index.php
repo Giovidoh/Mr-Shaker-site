@@ -10,7 +10,7 @@
 
 <!-- MAIN -->
 <main>
-    <!-- <div class="main-hero">
+    <div class="main-hero">
         <div class="main-hero__slider">
             <div class="main-hero__slides">
                 <div class="main-hero__slides__slide">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="main-body">
         <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
