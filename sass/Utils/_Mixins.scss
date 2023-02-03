@@ -19,6 +19,14 @@
             width: 96%;
         }
 
+        &:focus::before{
+            animation: pulse none;
+        }
+
+        &:focus img{
+            display: none;
+        }
+
         &::after{
             content: '';
             height: 83%;

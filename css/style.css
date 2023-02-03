@@ -36,6 +36,12 @@ body {
   height: 96%;
   width: 96%;
 }
+.plus-button:focus::before {
+  animation: pulse none;
+}
+.plus-button:focus img {
+  display: none;
+}
 .plus-button::after {
   content: "";
   height: 83%;
