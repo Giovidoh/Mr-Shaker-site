@@ -9,7 +9,7 @@
 ?>
 
 <!-- MAIN -->
-<main>
+<main class="index-main">
     <div class="main-hero">
         <div class="main-hero__slider">
             <div class="main-hero__slides">

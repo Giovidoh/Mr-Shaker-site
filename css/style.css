@@ -14,12 +14,13 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  background-color: #a1bdb8;
 }
 
 .plus-button {
   border-radius: 50%;
   border: none;
-  background-color: #e27900;
+  background-color: #2b7064;
   padding: 10px;
   cursor: pointer;
   position: relative;
@@ -85,6 +86,7 @@ body {
 }
 header {
   background-color: #000;
+  box-shadow: 0 4px 25px -10px #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,14 +125,14 @@ header {
   padding: 10px 0;
 }
 .navbar__list__link:hover {
-  color: #e27900;
+  color: #2b7064;
 }
 .navbar__list__link--active {
-  color: #e27900;
+  color: #2b7064;
 }
 .navbar .logo img {
   height: 150px;
-  background-color: #e27900;
+  background-color: #FFF;
   border-radius: 0px 0px 25px 25px;
   margin-top: 34px;
 }
@@ -158,11 +160,11 @@ header {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #e27900;
+  background-color: #2b7064;
   transition: 0.3s;
 }
 .navbar__change-language a:hover {
-  color: #e27900;
+  color: #2b7064;
 }
 .navbar__change-language a:hover::after {
   width: 100%;
@@ -173,7 +175,6 @@ header {
 
 main {
   flex-grow: 1;
-  margin-top: 120px;
 }
 
 footer {
@@ -220,7 +221,7 @@ footer {
 
 ::-webkit-scrollbar {
   position: fixed;
-  background-color: #e27900;
+  background-color: #2b7064;
   width: 5px;
   border-radius: 20px;
 }
@@ -232,6 +233,10 @@ footer {
   border-radius: 20px;
 }
 
+.index-main {
+  margin-top: 120px;
+}
+
 .main-hero__text {
   position: absolute;
   left: 50%;
@@ -239,7 +244,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #2b6970;
+  color: #2b7064;
   border: 2px solid white;
 }
 .main-hero__heading {
@@ -261,9 +266,7 @@ footer {
 }
 .main-hero__slides__slide {
   width: 100vw;
-  height: 100vh;
-  background-color: #2b6970;
-  background-blend-mode: multiply;
+  height: 70vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
