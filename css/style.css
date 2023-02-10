@@ -376,10 +376,9 @@ footer {
   height: 200px;
   width: 300px;
   top: 5%;
-  z-index: 100;
   transform: rotate(-10deg);
   background-image: url(../images/image-accueil-intro-1.jpg);
-  background-color: #F1F1F1;
+  filter: grayscale(70%);
   background-size: cover;
   box-shadow: -5px 4px 25px -10px #000;
 }
@@ -391,6 +390,7 @@ footer {
   background-image: url(../images/image-accueil-intro-2.jpg);
   background-color: #F1F1F1;
   background-size: cover;
+  z-index: 100;
   box-shadow: -5px 4px 25px -10px #000;
 }
 .main-body__section-two {
