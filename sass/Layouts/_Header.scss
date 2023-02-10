@@ -1,6 +1,6 @@
 header{
     background-color: $pure-black;
-    box-shadow: 0 4px 25px -10px $pure-black;
+    @include header-box-shadow();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,12 +47,13 @@ header{
         }
 
         .logo{
-
+            
                 img{
                     height: 150px;
                     background-color: $logo-color;
                     border-radius: 0px 0px 25px 25px;
                     margin-top: 34px;
+                    @include header-box-shadow();
                 }
         }
 

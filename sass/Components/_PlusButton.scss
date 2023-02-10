@@ -1,5 +1,11 @@
+/* HTML
+<button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
+*/
+
 .plus-button{
     @include plus-button($backColor: $color-primary);
+    position: absolute;
+    top: 0;
 }
 
 

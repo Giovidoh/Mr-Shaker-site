@@ -11,8 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $background-image-replace;
-        border: 2px solid white;
+        color: $pure-white;
     }
 
     &__heading{
@@ -23,6 +22,14 @@
     &__intro{
         text-align: center;
         font-size: 30px;
+            b{
+                color: $pure-black;
+                text-transform: uppercase;
+            }
+
+            .third{
+                color: $pure-white;
+            }
     }
 
     &__slider{
@@ -33,12 +40,10 @@
     &__slides{
         display: flex;
         width: calc(100vw * 4);
-        animation: hero-moves 30s infinite;
+        animation: hero-moves 15s infinite;
         &__slide{
             width: 100vw;
             height: 70vh;
-            // background-color: $background-image-replace;
-            // background-blend-mode: multiply;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -70,7 +75,119 @@
 // BODY
 
 .main-body{
-    padding: 7%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        &__section-one{
+            margin-bottom: 70px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 400px;
+                &__text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 25px;
+                    font-family: 'Inter', sans-serif;
+                        &__heading{
+                            position: relative;
+                            text-align: center;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    top: 120%;
+                                    left: 10px;
+                                    height: 1px;
+                                    width: 40%;
+                                    box-shadow: 150px 0 0px $pure-black;
+                                    background-color: $pure-black;
+                                }
+
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 118%;
+                                    left: 140px;
+                                    height: 5px;
+                                    width: 5px;
+                                    border-radius: 50%;
+                                    background-color: $pure-black;
+                                }
+                        }
+
+                        &__desc{
+                            margin-top: 50px;
+                            padding: 0 50px;
+                            text-align: center;
+                            font-size: 16px;
+                        }
+                }
+
+                &__image{
+                    position: relative;
+                    background-image: url(../images/mr-shaker-logo.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 100%;
+                    height: 100%;
+                        div{
+                            position: absolute;
+                            border: 8px solid #ffe9ae;
+                            border-radius: 5px;
+                            
+                        }
+
+                        &__one{
+                            height: 200px;
+                            width: 300px;
+                            top: 5%;
+                            z-index: 100;
+                            transform: rotate(-10deg);
+                            background-image: url(../images/image-accueil-intro-1.jpg);
+                            background-color: #F1F1F1;
+                            background-size: cover;
+                            @include image-box-shadow();
+                        }
+
+                        &__two{
+                            height: 200px;
+                            width: 300px;
+                            top: 50%;
+                            transform: rotate(10deg) translateX(40px);
+                            background-image: url(../images/image-accueil-intro-2.jpg);
+                            background-color: #F1F1F1;
+                            background-size: cover;
+                            @include image-box-shadow();
+                            
+                        }
+                }
+        }
+
+        &__section-two{
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background-image: url(../images/image-accueil-section-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &__section-three{
+            height: 400px;
+            width: 100%;
+        }
+
+        &__section-four{
+            height: 400px;
+            width: 100%;
+            background-color: $pure-black;
+        }
+
+        &__section-five{
+            height: 400px;
+            width: 100%;
+        }
 }
 
 

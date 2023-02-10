@@ -44,7 +44,7 @@
             height: 100%;
             width: 100%;
             border-radius: 50%;
-            border: 7px solid $pure-black;
+            border: 7px solid $pure-white;
             opacity: 1;
             position: absolute;
             top: 50%;
@@ -57,4 +57,12 @@
             height: 30px;
             width: 30px;
         }
+}
+
+@mixin header-box-shadow($color: $pure-black){
+    box-shadow: 0 4px 25px -10px $color;
+}
+
+@mixin image-box-shadow($color: $pure-black){
+    box-shadow: -5px 4px 25px -10px $color;
 }

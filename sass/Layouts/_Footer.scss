@@ -15,23 +15,34 @@ footer{
     column-gap: 20px;
     padding: 10px;
         &__item{
-            
+            &__heading{
+                font-size: 24px;
+                text-transform: uppercase;
+                position: relative;
+                margin-bottom: 20px;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        height: 1px;
+                        width: 95%;
+                        background-color: $footer-color-2;
+                    }
+            }
+
+            &__div{
+                display: flex;
+                align-items: center;
+            }
+
+            &__AboutUs-icon{
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
         }
 
-        &__headings{
-            font-size: 24px;
-            text-transform: uppercase;
-            position: relative;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    height: 1px;
-                    width: 95%;
-                    background-color: $footer-color-2;
-                }
-        }
 }
 
 .footer-copyright{
