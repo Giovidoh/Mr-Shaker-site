@@ -190,7 +190,7 @@ footer {
   justify-content: space-between;
   background-color: #efe6da;
   padding: 50px 50px 0px 50px;
-  height: 200px;
+  height: fit-content;
 }
 
 .footer-infos {
@@ -229,7 +229,7 @@ footer {
   height: 50px;
   width: 100vw;
   border-top: 1px solid #CCC;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .footer-copyright p {
   text-align: center;
