@@ -1,3 +1,6 @@
+/* HTML
+<button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
+*/
 * {
   margin: 0;
   padding: 0;
@@ -23,48 +26,50 @@ body {
 .plus-button {
   border-radius: 50%;
   border: none;
-  background-color: #2b7064;
-  padding: 10px;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-origin: 50% 50%;
   transition: all 1s;
   position: absolute;
-  top: 0;
 }
 .plus-button:focus {
-  border: 7px solid #000;
-  padding: 100px;
+  transform: scale(4);
 }
-.plus-button:focus::after {
+.plus-button:focus .plus-button__circle {
   height: 96%;
   width: 96%;
 }
 .plus-button:focus::before {
   animation: pulse none;
-}
-.plus-button:focus img {
   display: none;
 }
-.plus-button::after {
+.plus-button:focus .plus-button__circle__img {
+  display: none;
+}
+.plus-button__circle {
   content: "";
   height: 83%;
   width: 83%;
   border-radius: 50%;
   border: 1px solid #FFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plus-button__circle__img {
+  height: 30px;
+  width: 30px;
 }
 .plus-button::before {
   content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 7px solid #FFF;
+  border: 5px solid #FFF;
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -72,9 +77,47 @@ body {
   transform: translate(-50%, -50%);
   animation: pulse 1.5s infinite;
 }
-.plus-button img {
-  height: 30px;
-  width: 30px;
+.plus-button:nth-child(1) {
+  top: 20%;
+  left: 10%;
+}
+.plus-button:nth-child(1)::before {
+  animation-delay: 1s;
+}
+.plus-button:nth-child(2) {
+  top: 60%;
+  left: 25%;
+}
+.plus-button:nth-child(2)::before {
+  animation-delay: 2.2s;
+}
+.plus-button:nth-child(3) {
+  top: 50%;
+  left: 50%;
+}
+.plus-button:nth-child(3)::before {
+  animation-delay: 3.2s;
+}
+.plus-button:nth-child(4) {
+  top: 55%;
+  left: 80%;
+}
+.plus-button:nth-child(4)::before {
+  animation-delay: 4.5s;
+}
+.plus-button:nth-child(5) {
+  top: 20%;
+  left: 68%;
+}
+.plus-button:nth-child(5)::before {
+  animation-delay: 5.5s;
+}
+.plus-button:nth-child(6) {
+  top: 30%;
+  left: 35%;
+}
+.plus-button:nth-child(6)::before {
+  animation-delay: 6s;
 }
 
 @keyframes pulse {

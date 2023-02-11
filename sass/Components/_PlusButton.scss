@@ -3,9 +3,55 @@
 */
 
 .plus-button{
-    @include plus-button($backColor: $color-primary);
+    @include plus-button();
     position: absolute;
-    top: 0;
+        &:nth-child(1){
+            top: 20%;
+            left: 10%;
+            &::before{
+                animation-delay: 1s;
+            }
+        }
+
+        &:nth-child(2){
+            top: 60%;
+            left:25%;
+            &::before{
+                animation-delay: 2.2s;
+            }
+        }
+
+        &:nth-child(3){
+            top: 50%;
+            left: 50%;
+            &::before{
+                animation-delay: 3.2s;
+            }
+        }
+
+        &:nth-child(4){
+            top: 55%;
+            left: 80%;
+            &::before{
+                animation-delay: 4.5s;
+            }
+        }
+
+        &:nth-child(5){
+            top: 20%;
+            left: 68%;
+            &::before{
+                animation-delay: 5.5s;
+            }
+        }
+
+        &:nth-child(6){
+            top: 30%;
+            left: 35%;
+            &::before{
+                animation-delay: 6s;
+            }
+        }
 }
 
 

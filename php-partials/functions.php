@@ -36,3 +36,15 @@ function add_nav_menu2(){
         add_nav_item("infos.php", "Infos").
         add_nav_item("contacts.php", "Contacts");
 }
+
+function add_plusButton(string $color): string{
+    $button = <<< HTML
+        <button class="plus-button" style="background-color: {$color};">
+            <div class="plus-button__circle">
+                <img class="plus-button__circle__img" src="images/plus.png" alt="Icone plus">
+            </div>
+        </button>
+    HTML;
+
+    return $button;
+}

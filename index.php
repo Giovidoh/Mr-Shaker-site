@@ -1,11 +1,21 @@
-<!-- TITRE DE LA PAGE -->
+<!-- VARIABLES -->
 <?php
-    $title = "Accueil";
+    include_once("php-partials/variables.php");
+?>
+
+<!-- FUNCTIONS -->
+<?php
+    include_once("php-partials/functions.php");
 ?>
 
 <!-- HEADER -->
 <?php
     include_once("php-partials/header.php");
+?>
+
+<!-- TITRE DE LA PAGE -->
+<?php
+    $title = "Accueil";
 ?>
 
 <!-- MAIN -->
@@ -67,12 +77,15 @@
         </section>
 
         <section class="main-body__section-two">
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
-            <button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
+            <?php
+                echo add_plusButton($button_color_1);
+                echo add_plusButton($button_color_2);
+                echo add_plusButton($button_color_3);
+                echo add_plusButton($button_color_4);
+                echo add_plusButton($button_color_5);
+                echo add_plusButton($button_color_6);
+
+            ?>
         </section>
 
         <section class="main-body__section-three">

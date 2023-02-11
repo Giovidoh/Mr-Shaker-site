@@ -1,42 +1,48 @@
-@mixin plus-button($backColor: $color-primary){
+/* HTML
+<button class="plus-button"><img src="images/plus.png" alt="Icone plus"></button>
+*/
+@mixin plus-button(){
     border-radius: 50%;
     border: none;
-    background-color: $backColor;
-    padding: 10px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-origin: 50% 50%;
     transition: all 1s;
         &:focus{
-            border: 7px solid $pure-black;
-            padding: 100px;
+            transform: scale(4);
         }
 
-        &:focus::after{
+        &:focus &__circle{
             height: 96%;
             width: 96%;
         }
 
         &:focus::before{
             animation: pulse none;
-        }
-
-        &:focus img{
             display: none;
         }
 
-        &::after{
+        &:focus &__circle__img{
+            display: none;
+        }
+
+        &__circle{
             content: '';
             height: 83%;
             width: 83%;
             border-radius: 50%;
             border: 1px solid $pure-white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                &__img{
+                    height: 30px;
+                    width: 30px;
+                }
         }
 
         &::before{
@@ -44,7 +50,7 @@
             height: 100%;
             width: 100%;
             border-radius: 50%;
-            border: 7px solid $pure-white;
+            border: 5px solid $pure-white;
             opacity: 1;
             position: absolute;
             top: 50%;
@@ -53,10 +59,7 @@
             animation: pulse 1.5s infinite;
         }
 
-        img{
-            height: 30px;
-            width: 30px;
-        }
+        
 }
 
 @mixin header-box-shadow($color: $pure-black){
