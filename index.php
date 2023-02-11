@@ -35,7 +35,7 @@
                     <div class="main-hero__text">
                         <h2 class="main-hero__heading"></h2>
                         <p class="main-hero__intro">
-                            En choisissant <b>Mr. Shaker Bar Mobile Service</b>, c'est la garantie d'un événement unique en son genre avec la participation d'un mixologue professionnel, Mr Shaker, qui sera à votre écoute afin de réaliser les cocktails et les boissons qui vous ressemblent.
+                            En choisissant Mr. Shaker Bar Mobile Service, c'est la garantie d'un événement unique en son genre avec la participation d'un mixologue professionnel, Mr Shaker, qui sera à votre écoute afin de réaliser les cocktails et les boissons qui vous ressemblent.
                         </p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                     <div class="main-hero__text">
                         <h2 class="main-hero__heading"></h2>
                         <p class="main-hero__intro">
-                            <b class="third">Mr. Shaker Bar Mobile Service</b> s'adapte à votre envie et anime tout type d'événements particuliers et professionnels, allant de 10 à 500 personnes.
+                            Mr. Shaker Bar Mobile Service s'adapte à votre envie et anime tout type d'événements particuliers et professionnels, allant de 10 à 500 personnes.
                         </p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <div class="main-hero__text">
                         <h2 class="main-hero__heading"></h2>
                         <p class="main-hero__intro">
-                            Osez <b>Mr. Shaker Bar Mobile Service</b>, ce bar à cocktails atypiques qui se déplace jusqu'à votre lieu d'événement.
+                            Osez Mr. Shaker Bar Mobile Service, ce bar à cocktails atypiques qui se déplace jusqu'à votre lieu d'événement.
                         </p>
                     </div>
                 </div>

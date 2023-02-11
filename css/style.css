@@ -313,13 +313,6 @@ footer {
   text-align: center;
   font-size: 30px;
 }
-.main-hero__intro b {
-  color: #000;
-  text-transform: uppercase;
-}
-.main-hero__intro .third {
-  color: #FFF;
-}
 .main-hero__slider {
   width: 100vw;
   overflow: hidden;
